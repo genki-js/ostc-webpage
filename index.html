@@ -10,6 +10,7 @@
             padding: 0;
             margin: 0;
         }
+
         a {
             text-decoration: none;
             color: #000;
@@ -29,9 +30,17 @@
         }
 
         .main h2 {
+            margin: 20px 0 0 0;
+            padding: 0;
             font-size: 1.5em;
             font-weight: 100;
-            letter-spacing: 0.5em;
+            letter-spacing: 0.3em;
+        }
+
+        .main span {
+            font-size: 0.8em;
+            margin: 0;
+            padding: 0;
         }
 
         .works {
@@ -50,10 +59,12 @@
             background: #fff;
             border-radius: 10px;
         }
+
         .astr {
             background-image: url(img/astr.png);
             background-size: cover;
         }
+
         .explain {
             display: flex;
             width: 100%;
@@ -62,9 +73,95 @@
             margin-top: auto;
             border-radius: 0 0 10px 10px;
         }
+
         .explain span {
             margin: auto;
             font-weight: 300;
+        }
+
+        .hero {
+            display: flex;
+            width: 100%;
+            height: 400px;
+            background-color: #fff;
+        }
+
+        .loading {
+            margin: auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.15em;
+            font-size: 5rem;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+        }
+
+        .loading span {
+            display: inline-block;
+            animation: pop 1.6s cubic-bezier(.65, .05, .36, 1) infinite;
+        }
+
+        .loading span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .loading span:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .loading span:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .loading span:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .loading span:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        .loading span:nth-child(6) {
+            animation-delay: 0.5s;
+        }
+
+        .loading span:nth-child(7) {
+            animation-delay: 0.6s;
+        }
+        .loading span:nth-child(8) {
+            animation-delay: 0.7s;
+        }
+
+        .loading span:nth-child(9) {
+            animation-delay: 0.8s;
+        }
+
+        .loading span:nth-child(10) {
+            animation-delay: 0.9s;
+        }
+
+
+        @keyframes pop {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 0.3;
+            }
+
+            30% {
+                transform: translateY(-20px) scale(1.15);
+                opacity: 1;
+            }
+
+            60% {
+                transform: translateY(0) scale(1);
+                opacity: 0.6;
+            }
+
+            100% {
+                transform: translateY(0) scale(1);
+                opacity: 0.3;
+            }
         }
     </style>
 </head>
@@ -73,9 +170,21 @@
     <div class="container">
         <section class="main">
             <div class="hero">
-                
+                <div class="loading">
+                    <span>O</span>
+                    <span>S</span>
+                    <span>H</span>
+                    <span>I</span>
+                    <span>M</span>
+                    <span>A</span>
+                    <span>T</span>
+                    <span>E</span>
+                    <span>C</span>
+                    <span>H</span>
+                </div>
             </div>
-            <h2>TOP</h2>
+            <h2>WORKS</h2>
+            <span>制作物一覧</span>
             <div class="works">
                 <a class="work-item astr" href="https://mituki1234.github.io/astro-trip/">
                     <div class="explain">
