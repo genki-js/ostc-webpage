@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pan no mimi</title>
+    <style>
+        html,
+        body {
+            font-family: 'Noto Sans JP';
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .container {
+            background-color: #e7e7e7;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main h2 {
+            font-size: 1.5em;
+            font-weight: 100;
+            letter-spacing: 0.5em;
+        }
+
+        .works {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+
+        .work-item {
+            display: flex;
+            width: 250px;
+            height: 190px;
+            background: #fff;
+            border-radius: 10px;
+        }
+        .astr {
+            background-image: url(img/astr.png);
+            background-size: cover;
+        }
+        .explain {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-top: auto;
+            border-radius: 0 0 10px 10px;
+        }
+        .explain span {
+            margin: auto;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="main">
+            <h2>TOP</h2>
+            <div class="works">
+                <a class="work-item astr" href="https://mituki1234.github.io/astro-trip/">
+                    <div class="explain">
+                        <span>astr trip</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
